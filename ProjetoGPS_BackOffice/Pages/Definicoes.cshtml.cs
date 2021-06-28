@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace WebApplication1.Pages.Pages
+namespace ProjetoGPS_BackOffice.Pages.Pages
 {
     public class DefinicoesModel : PageModel
     {
