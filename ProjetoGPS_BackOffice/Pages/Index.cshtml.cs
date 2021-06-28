@@ -49,11 +49,6 @@ namespace WebApplication1.Pages
 			this.Response.Redirect(this.Request.Path);
 		}
 
-		public void Alert(string message)
-		{
-			this.ViewData["alert"] = message;
-		}
-
 
 
 
