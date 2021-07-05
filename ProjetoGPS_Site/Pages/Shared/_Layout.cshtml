@@ -25,11 +25,50 @@
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ms-auto" style="margin-top: 0px">
-					<li class="nav-item"><a class="nav-link" href="Index">Início</a></li>
-					<li class="nav-item"><a class="nav-link" href="Contactos">Contactos</a></li>
-					<li class="nav-item"><a class="nav-link" href="Sobre">Sobre</a></li>
-					<li class="nav-item"><a class="nav-link" href="Inscricao">Inscrição</a></li>
-					<li class="nav-item"><a class="nav-link" href="Testemunho">Testemunhos</a></li>
+					@if (ViewData["Title"] == "Home page")
+					{
+						<li class="nav-item active"><a class="nav-link active" href="Index" style="color: #75B625;">Início</a></li>
+					}
+					else
+					{
+						<li class="nav-item"><a class="nav-link" href="Index">Início</a></li>
+					}
+					
+					@if (ViewData["Title"] == "Contactos")
+					{
+						<li class="nav-item active"><a class="nav-link active" href="Contactos" style="color: #75B625;">Contactos</a></li>
+					}
+					else
+					{
+						<li class="nav-item"><a class="nav-link" href="Contactos">Contactos</a></li>
+					}
+					
+					@if (ViewData["Title"] == "Sobre")
+					{
+						<li class="nav-item active"><a class="nav-link active" href="Sobre" style="color: #75B625;">Sobre</a></li>
+					}
+					else
+					{
+						<li class="nav-item"><a class="nav-link" href="Sobre">Sobre</a></li>
+					}
+					
+					@if (ViewData["Title"] == "Inscrição")
+					{
+						<li class="nav-item active"><a class="nav-link active" href="Inscricao" style="color: #75B625;">Inscrição</a></li>
+					}
+					else
+					{
+						<li class="nav-item"><a class="nav-link" href="Inscricao">Inscrição</a></li>
+					}
+					
+					@if (ViewData["Title"] == "Testemunhos")
+					{
+						<li class="nav-item active"><a class="nav-link active" href="Testemunhos" style="color: #75B625;">Testemunhos</a></li>
+					}
+					else
+					{
+						<li class="nav-item"><a class="nav-link" href="Testemunho">Testemunhos</a></li>
+					}
 				</ul>
 			</div>
 		</div>
@@ -38,7 +77,7 @@
 
 	<!-- HEADER START -->
 	<header class="masthead text-center text-white">
-		<div class="masthead-content">
+		<div class="masthead-content" style="margin-top: -5%">
 			@if (ViewData["Info"] != null)
 			{
 				<div class="container alert alert-success" role="alert" style="width: 25%">
