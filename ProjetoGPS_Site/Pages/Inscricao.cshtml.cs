@@ -36,13 +36,9 @@ namespace ProjetoGPS_Site.Pages
 			{
 				app.Type = 0;
 			}
-			else if (type == "question")
+			else if (type == "message")
 			{
 				app.Type = 1;
-			}
-			else if (type == "sugestion")
-			{
-				app.Type = 2;
 			}
 
 			this.POST(app);

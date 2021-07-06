@@ -13,6 +13,13 @@ namespace ProjetoGPS_BackOffice.Pages
 {
 	public class Code
 	{
+		public string ApiEndpoint = "https://papi-testapp2.herokuapp.com/api/";
+		//public string ApiEndpoint = "https://localhost:44387/api/";
+
+
+
+
+
 		private readonly bool checkLogin = true;
 
 		private readonly PageModel page;
@@ -32,21 +39,10 @@ namespace ProjetoGPS_BackOffice.Pages
 		}
 
 
-
-		//public string ApiEndpoint = "https://papi-testapp2.herokuapp.com/api/";
-		public string ApiEndpoint = "https://localhost:44387/api/";
-
-
-
-
-
 		public Application[] Applications { get; set; }
 		public Application[] Pending { get; set; }
 		public Application[] Accepted { get; set; }
 		public Application[] Rejected { get; set; }
-
-
-
 
 
 		public class Admin

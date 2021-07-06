@@ -6,8 +6,8 @@ namespace ProjetoGPS_Site
 {
 	public class SiteCode
 	{
-		//public string ApiEndpoint = "https://papi-testapp2.herokuapp.com/api/";
-		public string ApiEndpoint = "https://localhost:44387/api/";
+		public string ApiEndpoint = "https://papi-testapp2.herokuapp.com/api/";
+		//public string ApiEndpoint = "https://localhost:44387/api/";
 
 
 
