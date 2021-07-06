@@ -54,11 +54,11 @@ namespace ProjetoGPS_Site.Pages
 
 		private void POST(Application app)
 		{
-			var client = new RestClient(ApiEndpoint + "applications");
+			RestClient client = new RestClient(ApiEndpoint + "applications");
 			client.Timeout = -1;
-			var request = new RestRequest(Method.POST);
+			RestRequest request = new RestRequest(Method.POST);
 			request.AddHeader("Content-Type", "application/json");
-			var body = JsonConvert.SerializeObject(app);
+			string body = JsonConvert.SerializeObject(app);
 			request.AddParameter("application/json", body, ParameterType.RequestBody);
 			IRestResponse res = client.Execute(request);
 		}
